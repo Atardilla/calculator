@@ -1,0 +1,129 @@
+
+body
+    font-family: 'Rubik', sans-serif
+    background: #cac8e6
+    .main
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-around
+        .header
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+        .grid-container 
+            display: grid
+            grid-template-columns: 1fr 1fr 1fr 1fr
+            grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr
+            gap: 0px 0px
+            grid-template-areas: "display display display display" "github-area github-area cc divide" "seven eight nine times" "four five six minus" "one two three plus" "zero comma backspace equal"
+
+            //mine things
+            width: 350px
+            height: 500px
+            background: #ffffff
+            border: 1px solid black
+            box-shadow: 25px 13px 52px -13px rgba(0,0,0,0.75)
+
+            .github-area
+                background: #e5ceff
+                color: white
+                display: flex
+                align-items: center
+                justify-content: center
+                font-weight: 900
+                font-size: 0.75em
+                color: #ffcefb
+              
+                a
+                    text-decoration: none
+                    
+                    
+
+
+            .btn
+                background: #201c33
+                color: white
+                display: flex
+                align-items: center
+                justify-content: center
+                font-weight: 900
+
+            .btn:hover
+                transition-duration: 0.3s
+                background: #282633
+                font-weight: 300
+                cursor: pointer
+            
+            .btn:active
+                transition-duration: 0s
+                font-size: 1em
+                cursor: pointer
+
+            .op
+                background: #8470bd    
+                font-size: 1.7em
+
+            .op:hover
+                background: #8470bd77
+
+            .equal-op
+                background: #f7ae8c
+                font-size: 2.5em
+            .equal-op:hover
+                background: #92614a
+
+            .special-op
+                background: #5c5463
+
+            #display
+                grid-area: display
+                max-width: 348px
+                font-size: 2.5em
+                font-weight: 700
+                padding: none
+                border: none
+                text-align: right
+                
+
+                
+            .zero
+                grid-area: zero
+            .comma
+                grid-area: comma
+            .backspace
+                grid-area: backspace
+            .equal
+                grid-area: equal
+            .plus
+                grid-area: plus
+            .minus
+                grid-area: minus
+            .times
+                grid-area: times
+            .divide
+                grid-area: divide
+            .one
+                grid-area: one
+            .two
+                grid-area: two
+            .three
+                grid-area: three
+            .four
+                grid-area: four
+            .five
+                grid-area: five
+            .six
+                grid-area: six
+            .seven
+                grid-area: seven
+            .eight
+                grid-area: eight
+            .nine
+                grid-area: nine
+            .cc
+                grid-area: cc
+            .github-area
+                grid-area: github-area
+            
